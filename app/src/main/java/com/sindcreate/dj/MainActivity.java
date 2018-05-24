@@ -32,6 +32,7 @@ ArrayList<Fragment> list=new ArrayList<>();
 
         StatusBarUtils.setWindowStatusBarColor(MainActivity.this,R.color.dj_titalred);
         ButterKnife.bind(this);
+
         initview();
 
 
