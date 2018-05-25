@@ -64,12 +64,16 @@
     <color name="dj_textcolor_part3">#ffe4e7</color>
     <color name="dj_titalred">#fa5538</color>
     <color name="dj_titalred_2">#fa3252</color>
+
    <color name="dj_textcolors">#15182d</color>
+    <color name="dj_textcolor_org">#fe8c26</color>
+
     <color name="dj_home_title_bj">#d8d8d8</color>
     <color name="dj_bj_fen">#fff7f7</color>
     <color name="dj_bj_fen2">#ffedee</color>
     <color name="dj_bj_huang">#ffe803</color>
     <color name="dj_dim">#979797</color>
+    <color name="dj_jinxingzhong">#fb4f5e</color>
 
 
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="40dp"
+    android:layout_height="36dp"
     android:background="@color/dj_home_title_bj"
     android:orientation="horizontal"
     android:gravity="center_vertical"
     >
 <RelativeLayout
-    android:layout_marginTop="4dp"
+    android:layout_marginTop="3.5dp"
     android:layout_width="match_parent"
     android:layout_height="@dimen/param_32dp"
     android:background="@color/dj_bj_fen"
@@ -26,6 +26,7 @@
 </LinearLayout>
 
    <TextView
+       android:id="@+id/id_hometitle_2"
        android:layout_width="60dp"
        android:layout_height="21dp"
        android:text="@string/homepage_part3_1"

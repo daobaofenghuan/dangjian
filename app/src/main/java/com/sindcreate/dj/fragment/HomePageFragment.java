@@ -14,8 +14,10 @@ import com.sindcreate.dj.base.Cell;
 import com.sindcreate.dj.cell.BannerCell;
 import com.sindcreate.dj.cell.ImageCell;
 import com.sindcreate.dj.cell.TextCell;
+import com.sindcreate.dj.cell.maincell.Part_Event;
 import com.sindcreate.dj.cell.maincell.Part_EveryDayHomework;
 import com.sindcreate.dj.cell.maincell.Part_EveryDayLesson;
+import com.sindcreate.dj.cell.maincell.Part_Showresult;
 import com.sindcreate.dj.cell.maincell.Partone;
 import com.sindcreate.dj.model.Entry;
 
@@ -75,6 +77,8 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
         cells.add(new Partone(null));
         cells.add(new Part_EveryDayHomework(null));
         cells.add(new Part_EveryDayLesson(null));
+        cells.add(new Part_Event(null));
+        cells.add(new Part_Showresult(null));
 
 //        for (int i=0;i<entries.size();i++){
 //            Entry entry = entries.get(i);
