@@ -1,4 +1,4 @@
-package com.sindcreate.dj.cell;
+package com.sindcreate.dj.cell.defautcell;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,6 @@ import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.adapter.CBPageAdapter;
 import com.bigkoo.convenientbanner.adapter.CBViewHolderCreator;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
 
 import com.sindcreate.dj.base.RVBaseCell;

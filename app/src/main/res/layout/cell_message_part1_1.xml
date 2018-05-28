@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/id_message_rlydown"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_44dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+
+            android:layout_width="@dimen/param_5dp"
+            android:layout_height="@dimen/param_5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/param_10dp"
+            android:background="@drawable/yuan_dian" />
+
+        <TextView
+            android:layout_width="@dimen/param_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/param_5dp"
+            android:layout_marginRight="@dimen/param_21dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/service_text2"
+            android:textColor="@color/dj_textcolorsbule"
+            android:textSize="@dimen/param_13dp" />
+
+        <ImageView
+            android:id="@+id/id_message_icondown"
+            android:layout_width="@dimen/param_7.5dp"
+            android:layout_height="@dimen/param_10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/param_10dp"
+            android:src="@mipmap/icon_down"
+
+            />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/id_message_nr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message_text1"
+        android:textColor="@color/dj_textcolorhui"
+        android:layout_marginLeft="@dimen/param_11dp"
+        android:layout_marginRight="@dimen/param_19dp"
+        android:ellipsize="end"
+        />
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <TextView
+        android:layout_marginLeft="@dimen/param_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/param_22dp"
+        android:text="2018-5-24"
+        android:textColor="@color/dj_textcolorhui"
+        
+        />
+
+    <TextView
+        android:layout_width="@dimen/param_71dp"
+        android:layout_height="@dimen/param_22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/param_10dp"
+        android:text="@string/message_queren"
+        android:textSize="@dimen/param_12dp"
+        android:gravity="center"
+        android:textColor="@color/dj_jinxingzhong"
+        android:background="@drawable/yuanjiao_jinxingzhong"
+        />
+
+
+</RelativeLayout>
+
+</LinearLayout>
+    
+
+</LinearLayout>

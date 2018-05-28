@@ -22,4 +22,14 @@
     <string name="homepage_bottom3">服务</string>
     <string name="homepage_bottom4">我的</string>
 
+    <string name="search">搜索</string>
+
+    <string name="service_text1_1">应急管理部有关负责人就《地方党政领导等等等</string>
+    <string name="service_text1_sj">2018-5-24</string>
+    <string name="service_help">申请帮扶</string>
+    <string name="service_text2">《专业技术类公务员管理规定（试行）》图解</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="message_text1">为了响应学校开展特色党日的号召,加强党员的党性修养,推进支部建设,我支部计划开展紧紧围绕“强组织、增活力...</string>
+<string name="message_queren">确认提醒</string>
+
 </resources>

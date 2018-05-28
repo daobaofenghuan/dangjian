@@ -2,32 +2,27 @@ package com.sindcreate.dj.fragment;
 
 import android.content.Intent;
 import android.os.Build;
-
-
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.sindcreate.dj.DataMocker;
 import com.sindcreate.dj.MainActivity;
 import com.sindcreate.dj.R;
 import com.sindcreate.dj.activity.MessageActivity;
 import com.sindcreate.dj.base.Cell;
-
-import com.sindcreate.dj.cell.defautcell.BannerCell;
-import com.sindcreate.dj.cell.maincell.Part_Event;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayHomework;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayLesson;
-import com.sindcreate.dj.cell.maincell.Part_Showresult;
-import com.sindcreate.dj.cell.maincell.Partone;
+import com.sindcreate.dj.cell.defautcell.ImageCell;
+import com.sindcreate.dj.cell.educell.Part_caution;
+import com.sindcreate.dj.cell.educell.Part_theme;
+import com.sindcreate.dj.cell.servicecell.Part_caution2;
+import com.sindcreate.dj.cell.servicecell.Part_laws;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static com.sindcreate.dj.DataMocker.mockData;
@@ -37,7 +32,7 @@ import static com.sindcreate.dj.DataMocker.mockMoreData;
  * Created by Double on 2018/5/22.
  */
 @RequiresApi(api = Build.VERSION_CODES.M)
-public class HomePageFragment extends AbsBaseFragment<Entry> {
+public class ServiceFragment extends AbsBaseFragment<Entry> {
     @Override
     public void onRecyclerViewInitialized() {
         //初始化View和数据加载
@@ -78,12 +73,17 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
     protected List<Cell> getCells(List<Entry> entries){
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
-        cells.add(new BannerCell(Arrays.asList(DataMocker.images)));
-        cells.add(new Partone(null));
-        cells.add(new Part_EveryDayHomework(null));
-        cells.add(new Part_EveryDayLesson(null));
-        cells.add(new Part_Event(null));
-        cells.add(new Part_Showresult(null));
+        cells.add(new Part_laws(null));
+        cells.add(new ImageCell(null));
+        cells.add(new Part_caution2(null));
+      //  cells.add(new Part_theme(null));
+     //   cells.add(new ImageCell(null));
+     //   cells.add(new Part_caution(null));
+//        cells.add(new Partone(null));
+//        cells.add(new Part_EveryDayHomework(null));
+//        cells.add(new Part_EveryDayLesson(null));
+//        cells.add(new Part_Event(null));
+//        cells.add(new Part_Showresult(null));
 
 //        for (int i=0;i<entries.size();i++){
 //            Entry entry = entries.get(i);
@@ -101,12 +101,8 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
     @Override
     public View addToolbar() {
         View toolbar = LayoutInflater.from(getContext()).inflate(R.layout.title,null);
-
-
-        TextView title=toolbar.findViewById(R.id.id_title_text);
-        title.setText("智慧党建");
-
-
+       TextView title=toolbar.findViewById(R.id.id_title_text);
+        title.setText("教育");
         MainActivity mainActivity= (MainActivity) getActivity();
         assert mainActivity != null;
         final Handler handler=mainActivity.handler;
@@ -114,17 +110,15 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //   startActivity(new Intent(getActivity(), MessageActivity.class));
+             //   startActivity(new Intent(getActivity(), MessageActivity.class));
                 Message msg=Message.obtain();
                 msg.what=100;
-                handler.sendMessage(msg);
+             handler.sendMessage(msg);
 
 
 
             }
         });
-
-
         return toolbar;
     }
 

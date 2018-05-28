@@ -6,10 +6,10 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.sindcreate.dj.cell.EmptyCell;
-import com.sindcreate.dj.cell.ErrorCell;
-import com.sindcreate.dj.cell.LoadMoreCell;
-import com.sindcreate.dj.cell.LoadingCell;
+import com.sindcreate.dj.cell.defautcell.EmptyCell;
+import com.sindcreate.dj.cell.defautcell.ErrorCell;
+import com.sindcreate.dj.cell.defautcell.LoadMoreCell;
+import com.sindcreate.dj.cell.defautcell.LoadingCell;
 import com.sindcreate.dj.util.Utils;
 
 

@@ -19,11 +19,10 @@ import com.sindcreate.dj.activity.MessageActivity;
 import com.sindcreate.dj.base.Cell;
 
 import com.sindcreate.dj.cell.defautcell.BannerCell;
-import com.sindcreate.dj.cell.maincell.Part_Event;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayHomework;
-import com.sindcreate.dj.cell.maincell.Part_EveryDayLesson;
-import com.sindcreate.dj.cell.maincell.Part_Showresult;
-import com.sindcreate.dj.cell.maincell.Partone;
+
+import com.sindcreate.dj.cell.defautcell.ImageCell;
+import com.sindcreate.dj.cell.educell.Part_caution;
+import com.sindcreate.dj.cell.educell.Part_theme;
 import com.sindcreate.dj.model.Entry;
 
 import java.util.ArrayList;
@@ -37,7 +36,7 @@ import static com.sindcreate.dj.DataMocker.mockMoreData;
  * Created by Double on 2018/5/22.
  */
 @RequiresApi(api = Build.VERSION_CODES.M)
-public class HomePageFragment extends AbsBaseFragment<Entry> {
+public class EducationFragment extends AbsBaseFragment<Entry> {
     @Override
     public void onRecyclerViewInitialized() {
         //初始化View和数据加载
@@ -78,12 +77,14 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
     protected List<Cell> getCells(List<Entry> entries){
         //根据实体生成Cell
         List<Cell> cells = new ArrayList<>();
-        cells.add(new BannerCell(Arrays.asList(DataMocker.images)));
-        cells.add(new Partone(null));
-        cells.add(new Part_EveryDayHomework(null));
-        cells.add(new Part_EveryDayLesson(null));
-        cells.add(new Part_Event(null));
-        cells.add(new Part_Showresult(null));
+        cells.add(new Part_theme(null));
+        cells.add(new ImageCell(null));
+        cells.add(new Part_caution(null));
+//        cells.add(new Partone(null));
+//        cells.add(new Part_EveryDayHomework(null));
+//        cells.add(new Part_EveryDayLesson(null));
+//        cells.add(new Part_Event(null));
+//        cells.add(new Part_Showresult(null));
 
 //        for (int i=0;i<entries.size();i++){
 //            Entry entry = entries.get(i);
@@ -100,13 +101,9 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
 
     @Override
     public View addToolbar() {
-        View toolbar = LayoutInflater.from(getContext()).inflate(R.layout.title,null);
-
-
-        TextView title=toolbar.findViewById(R.id.id_title_text);
-        title.setText("智慧党建");
-
-
+        View toolbar = LayoutInflater.from(getContext()).inflate(R.layout.title_edu,null);
+       TextView title=toolbar.findViewById(R.id.id_title_text);
+        title.setText("教育");
         MainActivity mainActivity= (MainActivity) getActivity();
         assert mainActivity != null;
         final Handler handler=mainActivity.handler;
@@ -123,8 +120,6 @@ public class HomePageFragment extends AbsBaseFragment<Entry> {
 
             }
         });
-
-
         return toolbar;
     }
 

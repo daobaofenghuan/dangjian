@@ -1,129 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="109dp"
-    android:background="@color/white"
-    android:orientation="horizontal"
-
-    android:gravity="center_vertical"
-    >
-
-
-
-   <LinearLayout
-       android:layout_weight="1"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+   <FrameLayout
        android:layout_width="match_parent"
-       android:id="@+id/id_home_sanhuiyike_ly"
-       android:layout_height="wrap_content"
-       android:gravity="center"
-
-       android:orientation="vertical">
+       android:layout_height="112.5dp">
 
       <ImageView
-          android:id="@+id/id_home_sanhuiyike_img"
-          android:layout_width="@dimen/param_55dp"
-          android:layout_height="55dp"
+          android:id="@+id/image"
+          android:layout_width="match_parent"
+          android:layout_height="112.5dp"
+          android:scaleType="centerCrop"
+          android:src="@mipmap/test_pic_22"
 
+          />
+   </FrameLayout>
 
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_1" />
-
-      <TextView
-          android:id="@+id/id_home_sanhuiyike_tx"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:gravity="center_horizontal|center_vertical"
-
-          android:text="@string/homepage_part1_1"
-          android:textColor="@color/dj_textcolors"
-          android:textSize="@dimen/param_14dp" />
-   </LinearLayout>
-
-   <LinearLayout
-       android:layout_weight="1"
-       android:layout_width="match_parent"
-       android:id="@+id/id_home_dandri_ly"
-       android:layout_height="wrap_content"
-       android:gravity="center"
-
-       android:orientation="vertical">
-
-      <ImageView
-          android:id="@+id/id_home_dandri_img"
-          android:layout_width="55dp"
-          android:layout_height="55dp"
-
-
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_2" />
-
-      <TextView
-          android:id="@+id/id_home_dandri_tx"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:gravity="center_horizontal|center_vertical"
-
-          android:text="@string/homepage_part1_2"
-          android:textColor="@color/dj_textcolors"
-          android:textSize="@dimen/param_14dp" />
-   </LinearLayout>
-   <LinearLayout
-       android:layout_weight="1"
-       android:layout_width="match_parent"
-       android:id="@+id/id_home_zaixiandati_ly"
-       android:layout_height="wrap_content"
-       android:gravity="center"
-
-       android:orientation="vertical">
-
-      <ImageView
-          android:id="@+id/id_home_zaixiandati_img"
-          android:layout_width="55dp"
-          android:layout_height="55dp"
-
-
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_1" />
-
-      <TextView
-          android:id="@+id/id_home_zaixiandati_tx"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:gravity="center_horizontal|center_vertical"
-
-          android:text="@string/homepage_part1_3"
-          android:textColor="@color/dj_textcolors"
-          android:textSize="@dimen/param_14dp" />
-   </LinearLayout>
-   <LinearLayout
-       android:layout_weight="1"
-       android:layout_width="match_parent"
-       android:id="@+id/id_bottmbarqz_ly1"
-       android:layout_height="wrap_content"
-       android:gravity="center"
-
-       android:orientation="vertical">
-
-      <ImageView
-          android:id="@+id/id_bottom_image001"
-          android:layout_width="55dp"
-          android:layout_height="55dp"
-
-
-          android:gravity="center_vertical"
-          android:src="@mipmap/icon_homepage_1" />
-
-      <TextView
-          android:id="@+id/id_bottom_text001"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:gravity="center_horizontal|center_vertical"
-
-          android:text="@string/homepage_part1_4"
-          android:textColor="@color/dj_textcolors"
-          android:textSize="@dimen/param_14dp" />
-   </LinearLayout>
-
-
-
-</LinearLayout>
+</RelativeLayout>

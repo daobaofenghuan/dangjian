@@ -5,14 +5,17 @@ import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
  * Created by Double on 2018/5/22.
  */
-public class RVBaseViewHolder extends RecyclerView.ViewHolder{
+public class RVBaseViewHolder extends RecyclerView.ViewHolder {
     private SparseArray<View> views;
     private View mItemView;
+
     public RVBaseViewHolder(View itemView) {
         super(itemView);
         views = new SparseArray<>();
@@ -22,6 +25,7 @@ public class RVBaseViewHolder extends RecyclerView.ViewHolder{
 
     /**
      * 获取ItemView
+     *
      * @return
      */
     public View getItemView() {
@@ -32,33 +36,40 @@ public class RVBaseViewHolder extends RecyclerView.ViewHolder{
         return retrieveView(resId);
     }
 
-    public TextView getTextView(int resId){
+    public TextView getTextView(int resId) {
         return retrieveView(resId);
     }
 
-    public ImageView getImageView(int resId){
+    public ImageView getImageView(int resId) {
         return retrieveView(resId);
     }
 
-    public Button getButton(int resId){
+    public RelativeLayout getRelativeLayout(int resId) {
+        return retrieveView(resId);
+    }
+    public LinearLayout getLinearLayout(int resId){
+        return  retrieveView(resId);
+    }
+    public Button getButton(int resId) {
         return retrieveView(resId);
     }
 
     @SuppressWarnings("unchecked")
-    protected <V extends View> V retrieveView(int viewId){
+    protected <V extends View> V retrieveView(int viewId) {
         View view = views.get(viewId);
-        if(view == null){
+        if (view == null) {
             view = mItemView.findViewById(viewId);
-            views.put(viewId,view);
+            views.put(viewId, view);
         }
         return (V) view;
     }
 
-    public void setText(int resId,CharSequence text){
+
+    public void setText(int resId, CharSequence text) {
         getTextView(resId).setText(text);
     }
 
-    public void setText(int resId,int strId){
+    public void setText(int resId, int strId) {
         getTextView(resId).setText(strId);
     }
 

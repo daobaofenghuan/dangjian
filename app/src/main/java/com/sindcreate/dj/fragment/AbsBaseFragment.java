@@ -24,7 +24,7 @@ import com.sindcreate.dj.base.RVSimpleAdapter;
 import java.util.List;
 
 /**
- * Created by zhouwei on 17/2/3.
+ * Created by Double on 17/2/3.
  */
 
 public abstract class AbsBaseFragment<T> extends Fragment {

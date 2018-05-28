@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="36dp"
-    android:background="@color/dj_home_title_bj"
+    android:background="@color/base_gray_eee"
     android:orientation="horizontal"
     android:gravity="center_vertical"
     >
@@ -37,6 +37,7 @@
        android:textSize="15sp"
        />
 <ImageView
+    android:id="@+id/home_title_rightimg"
     android:layout_alignParentRight="true"
     android:layout_centerVertical="true"
     android:layout_width="@dimen/param_7.5dp"
@@ -45,16 +46,16 @@
     android:layout_marginRight="10.5dp"
     />
 
-<TextView
-    android:layout_width="26.5dp"
-    android:layout_height="18.5dp"
-    android:text="@string/more"
-    android:layout_alignParentRight="true"
-    android:layout_marginRight="24dp"
-    android:textSize="13sp"
-    android:layout_marginTop="7dp"
-    android:layout_marginBottom="6.5dp"
-    />
+    <TextView
+        android:id="@+id/id_item_rtext"
+        android:layout_width="wrap_content"
+        android:layout_height="18.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6.5dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/more"
+        android:textSize="13sp" />
 
 </RelativeLayout>
 

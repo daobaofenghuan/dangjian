@@ -10,4 +10,5 @@ public class Entry {
     public int type;
     public String imageUrl;
     public String content;
+
 }

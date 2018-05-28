@@ -1,4 +1,4 @@
-package com.sindcreate.dj.cell;
+package com.sindcreate.dj.cell.defautcell;
 
 import android.content.Context;
 import android.view.LayoutInflater;

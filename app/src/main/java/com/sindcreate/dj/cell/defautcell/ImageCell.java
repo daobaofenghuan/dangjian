@@ -1,4 +1,4 @@
-package com.sindcreate.dj.cell;
+package com.sindcreate.dj.cell.defautcell;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,13 +32,14 @@ public class ImageCell extends RVBaseCell<Entry> {
 
     @Override
     public void onBindViewHolder(RVBaseViewHolder holder, int position) {
-        Log.e("zhouwei","ImageCell onBindViewHolder");
-        Picasso.with(holder.getItemView().getContext()).load(mData.imageUrl).into(holder.getImageView(R.id.image));
+      //  Log.e("zhouwei","ImageCell onBindViewHolder");
+       // Picasso.with(holder.getItemView().getContext()).load(mData.imageUrl).into(holder.getImageView(R.id.image));
+     //   holder.getImageView(R.id.image).setImageBitmap();
     }
 
     @Override
     public void releaseResource() {
         super.releaseResource();
-        Log.e("zhouwei","ImageCell releaseResource");
+     //   Log.e("zhouwei","ImageCell releaseResource");
     }
 }

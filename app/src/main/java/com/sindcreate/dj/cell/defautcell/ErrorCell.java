@@ -1,4 +1,4 @@
-package com.sindcreate.dj.cell;
+package com.sindcreate.dj.cell.defautcell;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -13,16 +13,14 @@ import com.sindcreate.dj.base.RVSimpleAdapter;
  * Created by zhouwei on 17/1/23.
  */
 
-public class EmptyCell extends RVAbsStateCell {
-
-    public EmptyCell(Object o) {
+public class ErrorCell extends RVAbsStateCell {
+    public ErrorCell(Object o) {
         super(o);
     }
 
-
     @Override
     public int getItemType() {
-        return RVSimpleAdapter.EMPTY_TYPE;
+        return RVSimpleAdapter.ERROR_TYPE;
     }
 
     @Override
@@ -32,6 +30,6 @@ public class EmptyCell extends RVAbsStateCell {
 
     @Override
     protected View getDefaultView(Context context) {
-        return LayoutInflater.from(context).inflate(R.layout.rv_empty_layout,null);
+        return LayoutInflater.from(context).inflate(R.layout.rv_error_layout,null);
     }
 }
